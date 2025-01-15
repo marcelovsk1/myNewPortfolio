@@ -9,18 +9,40 @@
     text-align: center;
     font-size: 3rem;
     margin-bottom: 30px;
+    font-weight: 700;
   }
   
-  .title span {
-    color: #5f9ea0;
-    font-weight: bold;
+  .buttonContainer {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
   }
   
-  .gridContainer {
+  .toggleButton {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .toggleButton:hover {
+    background-color: #d0d0d0;
+  }
+  
+  .activeButton {
+    background-color: #6200ea;
+    color: white;
+  }
+  
+  .contentContainer {
     display: flex;
     gap: 40px;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
   }
   
   .skills {
@@ -33,7 +55,7 @@
   .history {
     flex: 2;
     display: flex;
-    flex-direction: column; /* Alinha as experiências verticalmente */
+    flex-direction: column;
     gap: 20px;
   }
   
@@ -44,27 +66,21 @@
     border-radius: 8px;
     padding: 15px;
     text-align: start;
-    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
     transition: transform 0.3s ease;
-    /* width: 70%; */
   }
   
   .card:hover,
   .historyCard:hover {
     transform: translateY(-5px);
-    /* box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); */
   }
   
   .cardImage {
     width: 80px;
     height: 80px;
     margin-bottom: 10px;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: #f9f9f9; */
-    /* border-radius: 50%; */
   }
   
   .cardImage img {
@@ -74,7 +90,6 @@
   
   .cardTitle {
     font-size: 1rem;
-    text-align: start;
     font-weight: 500;
     color: #333;
     text-align: center;
@@ -88,10 +103,7 @@
   }
   
   .historyCardHeader img {
-    width: auto;
     height: 60px;
-    /* border-radius: 50%; */
-    /* background: #f9f9f9; */
   }
   
   .historyCardHeader h3 {
@@ -101,13 +113,13 @@
   }
   
   .historyCardHeader p {
-    font-size: 1.2rem;
+    font-size: .9rem;
     color: #666;
     margin: 0;
   }
   
   .historyCardHeader span {
-    font-size: 1rem;
+    font-size: .9rem;
     color: #888;
   }
   
@@ -118,15 +130,13 @@
   }
   
   .historyCard ul li {
-    font-size: 1.1rem;
+    font-size: .9rem;
     color: #555;
     margin-bottom: 5px;
-    padding-top: 20px;
-    padding-bottom: 40px;
   }
   
   @media (max-width: 768px) {
-    .gridContainer {
+    .contentContainer {
       flex-direction: column;
       gap: 20px;
     }
@@ -135,3 +145,4 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
+  
