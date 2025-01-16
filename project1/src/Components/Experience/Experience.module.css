@@ -1,6 +1,6 @@
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 50px auto;
     padding: 20px;
     background: #fff;
   }
@@ -19,22 +19,34 @@
   }
   
   .toggleButton {
-    background-color: #e0e0e0;
+    background-color: transparent;
     color: #333;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border: 1px solid #333;
+    border-radius: 2px;
+    /* transition: transform 0.3s ease; */
   }
   
   .toggleButton:hover {
-    background-color: #d0d0d0;
+    background-color: transparent;
+    border: 2px solid #333;
+    color: #333;
+    /* transform: translateY(-1px); */
   }
   
   .activeButton {
     background-color: #6200ea;
     color: white;
+    /* transition: transform 0.3s ease; */
+  }
+
+  .activeButton:hover {
+    /* transform: translateY(-1px); */
+    background-color: #6200ea;
+    color: white;
+    border: none;
   }
   
   .contentContainer {
@@ -71,7 +83,8 @@
   
   .card:hover,
   .historyCard:hover {
-    transform: translateY(-5px);
+    border: 1px solid #333;
+    transform: translateY(-1px);
   }
   
   .cardImage {
@@ -82,7 +95,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .cardImage img {
     max-width: 100%;
     max-height: 100%;

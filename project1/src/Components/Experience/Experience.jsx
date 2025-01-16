@@ -114,31 +114,28 @@ const Experience = () => {
         </div>
 
         {dataToDisplay.map((item, id) => (
-            <div
+          <div
             key={id}
             className={`${styles.historyCard} ${
-                isWorkExperience ? styles.workCard : styles.educationCard
+              isWorkExperience ? styles.workCard : styles.educationCard
             }`}
-            >
+          >
             <div className={styles.historyCardHeader}>
-                <img
-                src={getImage(item.imageSrc)}
-                alt={`${item.organisation} Logo`}
-                />
-                <div>
+              <img src={getImage(item.imageSrc)} alt={`${item.organisation} Logo`} />
+              <div>
                 <h3>{item.role}</h3>
                 <p>{item.organisation}</p>
                 <span>
-                    {item.startDate} - {item.endDate}
+                  {item.startDate} - {item.endDate}
                 </span>
-                </div>
+              </div>
             </div>
             <ul>
-                {item.experiences.map((experience, experienceId) => (
+              {item.experiences.map((experience, experienceId) => (
                 <li key={experienceId}>{experience}</li>
-                ))}
+              ))}
             </ul>
-            </div>
+          </div>
         ))}
         </div>
       </div>

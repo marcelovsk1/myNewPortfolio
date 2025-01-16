@@ -187,7 +187,7 @@
     color: #555;
     margin-bottom: 0.5rem;
     transition: background-color 0.3s, color 0.3s;
-    border-radius: 6px;
+    /* border-radius: 6px; */
   }
   
   /* Hover */

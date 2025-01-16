@@ -1,0 +1,82 @@
+/* Container */
+.footer {
+    width: 100%;
+    background-color: #f8f8f8; /* or any color/gradient you like */
+    padding: 3rem 10rem !important;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Example font */
+  }
+  
+  /* Content Centering */
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+  }
+  
+  .footer-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .footer-content p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+  }
+  
+  .footer-email {
+    color: #555;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-style: italic; /* optional for emphasis */
+  }
+  
+  /* Buttons */
+  .footer-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .button.footer-button {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Hover effect */
+  .button.footer-button:hover {
+    transform: scale(1.02);
+  }
+  
+  /* GitHub button */
+  .footer-button {
+    background-color: #24292e; /* GitHub’s brand color */
+  }
+  .footer-button:hover {
+    background-color: #373d42;
+  }
+  
+  /* LinkedIn button */
+  .linkedin-btn {
+    background-color: #0077b5; /* LinkedIn’s brand color */
+  }
+  .linkedin-btn:hover {
+    background-color: #005c82;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer-content {
+      padding: 0 1rem;
+    }
+  }
+  

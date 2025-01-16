@@ -108,7 +108,7 @@ const Projects = () => {
       imgUrl: adidasoriginals,
       link: "https://github.com/marcelovsk1/rct-4",
       liveDemo: null,
-      language: "React",
+      language: "React.Js",
     },
     {
       title: "My Portfolio",
@@ -116,7 +116,7 @@ const Projects = () => {
       imgUrl: portfolio,
       link: "https://github.com/marcelovsk1/my-new-portfolio",
       liveDemo: null,
-      language: "React",
+      language: "React.Js",
     },
     {
       title: "Game Dev Portfolio",
@@ -124,7 +124,7 @@ const Projects = () => {
       imgUrl: game_portfolio,
       link: "https://github.com/marcelovsk1/portfolio-games",
       liveDemo: null,
-      language: "React",
+      language: "React.Js",
     },
     {
       title: "Cube Rumble",
