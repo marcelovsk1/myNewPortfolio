@@ -1,5 +1,9 @@
 {
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "gsap": "^3.12.7",
+    "react-bootstrap": "^2.10.7",
+    "react-visibility-sensor": "^5.1.1",
     "web-vitals": "^4.2.4"
   }
 }
